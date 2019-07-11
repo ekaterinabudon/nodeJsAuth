@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Users
+    body
+        h1  Таблица пользователей
+        table
+            tbody
+                if users.length
+                    each user in users
+                        tr
+                            td= user.login
+                            td= user.password
